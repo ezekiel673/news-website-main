@@ -7,7 +7,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#00001A",
+        accent: "#F15E50",
+        grayishBlue: "#C5C6CE",
+        darkGrayishBlue: "#5D5F79",
+      },
+    },
   },
   plugins: [],
 }
