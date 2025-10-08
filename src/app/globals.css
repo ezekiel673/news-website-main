@@ -1,14 +1,39 @@
 @import "tailwindcss";
-
-
-@tailwind utilities;
-
 @plugin "tailwindcss-animate";
 @import "tw-animate-css";
 
 
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/static/inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
   body {
     @apply antialiased;
+    font-family: 'Inter', sans-serif;
+    background: var(--red);
   }
 
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li::marker {
+    content: "" !important;
+    display: none !important;
+  }
+}
+
+:root {
+  --S_orange: hsl(35, 77%, 62%);
+  --S_red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --G_blue: sl(233, 8%, 79%);
+  --Dg_blue: hsl(236, 13%, 42%);
+  --Vd_blue: hsl(240, 100%, 5%);
+}
