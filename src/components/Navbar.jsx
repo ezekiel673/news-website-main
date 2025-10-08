@@ -6,13 +6,13 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem } from "@/compon
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center py-6 px-4 lg:px-16">
-        <img src='./assets/logo.svg' alt="logo" />
+      <img src='./assets/logo.svg' alt="logo" />
       <NavigationMenu>
-        <NavigationMenuList className="flex space-x-8 text-darkGrayishBlue">
-          <NavigationMenuItem>Home</NavigationMenuItem>
+        <NavigationMenuList className="flex space-x-8 text-darkGrayishBlue list-none marker:hidden [&>li]:list-none [&>li]::marker:hidden">
+          <NavigationMenuItem className="list-none marker:hidden [&>li]:list-none [&>li]::marker:hidden">Home</NavigationMenuItem>
           <NavigationMenuItem>New</NavigationMenuItem>
           <NavigationMenuItem>Popular</NavigationMenuItem>
-          <NavigationMenuItem className="text-accent">Trending</NavigationMenuItem>
+          <NavigationMenuItem>Trending</NavigationMenuItem>
           <NavigationMenuItem>Categories</NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

@@ -17,7 +17,7 @@ export default function ArticleCards() {
       {articles.map(article => (
         <Card key={article.id} className="flex items-center gap-4 p-4">
           <div className="w-24 h-24 relative">
-            <Image src={article.img} alt={article.title} fill className="rounded-md object-cover" />
+            <Image src={article.img} alt={article.title} className="rounded-md object-fit" />
           </div>
           <CardContent className="p-0">
             <h3 className="text-accent font-bold text-xl">{article.id}</h3>
